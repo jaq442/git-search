@@ -36,7 +36,6 @@ function showInfos() { // transforma json em objeto para renderizar
 
   backButton.addEventListener("click", () => {
     location.replace("../../")
-    localStorage.clear()
 
   })
 }
