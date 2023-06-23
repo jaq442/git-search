@@ -28,6 +28,7 @@ function showInfos() { // transforma json em objeto para renderizar
   const posts = JSON.parse(localStorage.getItem("repos"))
 
     renderUser(user)
+
     renderPosts(posts)
  }
 
@@ -35,6 +36,7 @@ function showInfos() { // transforma json em objeto para renderizar
   const backButton = document.querySelector("button")
 
   backButton.addEventListener("click", () => {
+    localStorage.clear()
     location.replace("../../")
 
   })
